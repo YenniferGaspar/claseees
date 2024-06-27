@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Reserva de hoteles</title>
+</head>
+<body>
+    <!-- Encabezado con clase "hero" -->
+    <header class="hero">
+        <!-- Barra de navegación con clases "nav" y "container" -->
+        <nav class="nav container">
+          <!-- Lista de enlaces de la barra de navegación -->
+          <ul class="nav__link nav__link--menu">
+            <!-- Elemento de la lista para el enlace de Inicio -->
+              <li class="nav__items">
+                  <a href="" class="nav__links">Inicio</a>
+              </li>
+            <!-- Elemento de la lista para el enlace de Nosotros -->
+              <li class="nav__items nav__dropdown">
+                  <a href="" class="nav__links">Nosotros</a>
+              </li>
+            <!-- Elemento de la lista para el enlace de Taxis aereopuertos -->
+              <li class="nav__items">
+                  <a href="" class="nav__links">Taxis aereopuerto</a>
+              </li>
+            <!-- Elemento de la lista para el enlace de Alojamientos -->
+              <li class="nav__items">
+                  <a href="" class="nav__links">Alojamiento</a>
+              </li>
+          </ul>
+        </nav>
+        <!-- Contenedor de la sección hero con clase "container" -->    
+        <section class="hero__container container">
+            <!-- Título principal de la sección hero -->
+            <center><h1 class="hero__title" id="bievenido-title">¡Bienvenido a sueños del Mar!</h1></center>
+            <!-- Párrafo de la sección hero -->
+            <center><p class="hero__paragraph">Ofrecemosuna experiencia única y personalizada para los huéspedes</p></center>
+        </section>
+    </header>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <section class="knowledge">
+        <div class="knowledge__container container">
+            <!-- Contenedor de textos sobre la institución -->
+            <div class="knowledge__texts">
+                <!-- Título de la sección -->
+                <h2 class="subtitle">Habitaciones</h2>
+                
+                <!-- Párrafo descriptivo sobre la institución -->
+                <p class="knowledge__paragraph">
+                    El hotel dispone de 236 habitaciones, tanto de categoría Standard como Superior. 
+                    Ambas están decoradas en suaves tonos de color caramelo y gris.
+                    Los huéspedes pueden elegir entre una cama King o dos camas individuales. 
+                    Las habitaciones Superiores gozan de vistas a los paisajes que rodean el hotel 
+                    y ofrecen extras como la posibilidad de usar el servicio de transporte al 
+                    aeropuerto de forma gratuita.
+                </p>
+                
+                <!-- Enlace a la página "Mas información" -->
+                <a href="" class="cta">Mas información</a>
+            </div>
+
+            <!-- Contenedor de la imagen representativa -->
+            <figure class="knowledge__picture">
+                <!-- Imagen representativa de la sección -->
+                <img src="/img/imgg.jpg" class="knowledge__img" alt="Imagen representativa de la institución">
+            </figure>
+        </div>
+    </section>
+
+    
+    <section class="knowledge">
+        <div class="knowledge__container container">
+            <!-- Contenedor de textos sobre la institución -->
+            <div class="knowledge__texts">
+                <!-- Título de la sección -->
+                <h2 class="subtitle">Reuniones y eventos</h2>
+                
+                <!-- Párrafo descriptivo sobre la institución -->
+                <p class="knowledge__paragraph">
+                    Disponemos de cinco salas de eventos que pueden albergar hasta 300 personas. 
+                    Las salas disponen de luz natural y están diseñadas para alojar convenciones, 
+                    reuniones y también bodas. Podemos ocuparnos de contratar todo el equipo que 
+                    necesites y organizar cada detalle del evento, desde el café con bollería 
+                    hasta almuerzos completos. El área del parking cuenta con acceso directo 
+                    a las salas para eventos.
+                </p>
+                
+                <!-- Enlace a la página "Mas información" -->
+                <a href="" class="cta">Mas información</a>
+            </div>
+
+            <!-- Contenedor de la imagen representativa -->
+            <figure class="knowledge__picture">
+                <!-- Imagen representativa de la sección -->
+                <img src="/img/imgg.jpg" class="knowledge__img" alt="Imagen representativa de la institución">
+            </figure>
+        </div>
+    </section>
+
+    <section class="sect">
+        <div class="contenedor">
+            <div class="form-image">
+                <img src="/img/ttt.jpeg" alt="img" />
+            </div>
+
+            <form id="contact-form" >
+                <div class="formulario">
+                    <br>
+                    <br>
+                    <h1>Alojate con nostros</h1>
+                    <!-- Información Personal -->
+                    <div id="info-personal">
+                        <label for="nombres">Nombre Completo:</label>
+                        <input type="text" name="nombres" id="nombres" placeholder="Ingrese sus Nombres" pattern="[a-zA-Z ]+" title="Ingrese solo letras en este campo" required />
+                        <label for="email">Correo Electronico:</label>
+                        <input type="email" name="email" id="email" placeholder="Ingrese su Email" required />
+                        <label for="Fecha">Fecha de llegada:</label>
+                        <input type="date" name="date" id="celular" placeholder="Ingrese su número de Celular" pattern="[0-9]{9}" title="Número de celular válido de 9 dígitos" required />
+                        <label for="fecha">Fecha de salida</label>
+                        <input type="date" name="date" id="email" placeholder="Ingrese su Email" required />
+                        <label for="habitacion">Tipo de habitación:</label>
+                        <select id="controlselect" name="ordenar">
+                            <option value='0' >Individual</option>
+                            <option value='1' >Doble</option>
+                            <option value='2' >Suite</option>
+                        </select>
+                        <legend>Preferencias de cama:</legend>
+                            <label>
+                                <input type="radio" name="color">      Una cama grande
+                            </label>
+                            <label>
+                                <input type="radio" name="color">      Dos camas pequeñas
+                            </label>
+                        <label for="mensaje">Mensaje:</label>
+                        <input type="text" name="mensaje" id="mensaje" placeholder="Dejanos un mensaje" pattern="[a-zA-Z ]+" title="Ingrese solo letras en este campo" required />
+                        <button type="submit" id="send">Registrarme</button>
+                    </div>
+                </div>
+            </form>
+        </div>      
+    </section>
+    <script src="/texto.js"></script>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <!-- Columna del logo -->
+                <!-- <div class="footer-col col-xs-12 col-md-3">
+                    <div class="logo-container"> -->
+                        <!-- Logo -->
+                        <!-- <img src="../IMG/icono1.png" alt="Logo" class="logo img-responsive">
+                    </div> -->
+                    <!-- Slogan -->
+                    <!-- <p class="text-center">¡Honor, disciplina+, Lealtad!</p>
+                </div> -->
+    
+                <!-- Columna de redes sociales -->
+                <div class="footer-col col-xs-12 col-md-3">
+                    <h4 class="text-center">Síguenos en:</h4>
+                    <!-- Lista de redes sociales -->
+                    <div class="social-links text-center">
+                        <!-- Enlace a Facebook -->
+                        <a href="">
+                            <!-- Icono de Facebook -->
+                            <img src="" alt="Facebook" class="icon img-responsive">
+                        </a>
+                        <!-- Aquí puedes agregar más enlaces a otras redes sociales -->
+                    </div>
+                </div>
+    
+                <!-- Columna de enlaces -->
+                <div class="footer-col col-xs-12 col-md-3">
+                    <h4 class="text-center">Enlaces</h4>
+                    <!-- Lista de enlaces -->
+                    <ul class="list-unstyled text-center">
+                        <!-- Enlace a Quiénes Somos -->
+                        <li><a href="" target="_blank" rel="noopener noreferrer">Nostros</a></li>
+                        <!-- Enlace a Talleres Formativos -->
+                        <li><a href="" target="_blank" rel="noopener noreferrer">Taxis aereopuertos</a></li>
+                        <!-- Enlace a Contáctenos -->
+                        <li><a href="" target="_blank" rel="noopener noreferrer">Alojamientos</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Columna de información de contacto -->
+                <div class="footer-col col-xs-12 col-md-3">
+                    <h4 class="text-center">Ubícanos en...</h4>
+                    <!-- Lista de información de contacto -->
+                    <ul class="list-unstyled text-center">
+                        <!-- Dirección -->
+                        <li>Avenida O'Higgins # 398 <br> San Vicente, Cañete <br> Lima - Perú</li>
+                        <!-- Enlace al sitio web -->
+                        <li><a href="https://www.facebook.com/CentroDeVarones/?locale=es_LA">www.sueñosdelmar.com.pe</a></li>
+                        <!-- Email -->
+                        <li><a href="mailto:informes@sepulveda.edu.pe">alojossueñodelmar@gmail.com.pe</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+</body>
+</html>

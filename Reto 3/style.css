@@ -1,0 +1,569 @@
+/* Importa la fuente Poppins desde Google Fonts con diferentes pesos para su uso en la página. */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* Define variables globales, como el relleno del contenedor y el color del título. */
+:root {
+    --padding-container: 100px 0;
+    --color-title: #000000;
+}
+
+/* Establece la fuente global para el cuerpo del documento. */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Define un contenedor principal con anchura máxima, margen automático y relleno variable. */
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: var(--padding-container);
+}
+
+/* Estilos para la sección "Hero", incluyendo un fondo con degradado y una imagen de fondo con una máscara de recorte. */
+.hero {
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+    max-height: 800px;
+    position: relative;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    color: #fff;
+}
+
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('/img/fondo2.jpg');
+    background-size: cover;
+    clip-path: rect(0, auto, auto, 0);
+    z-index: -1;
+}
+
+
+/* Estilos para la barra de navegación, con variables para el relleno y otras propiedades. */
+.nav {
+    --padding-container: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/* Otros estilos para la barra de navegación, incluyendo estilos para enlaces y menú */
+.nav__title {
+    font-weight: 300;
+}
+
+.nav__link {
+    margin-left: auto;
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    gap: 2em;
+}
+
+.nav__items {
+    list-style: none;
+    position: relative; /* Asegura que los elementos de la lista mantengan su posición */
+}
+
+.nav__links {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5em;
+}
+
+.nav__menu {
+    margin-left: auto;
+    cursor: pointer;
+    display: none;
+}
+
+.nav__img {
+    display: block;
+    width: 30px;
+}
+
+.nav__close {
+    display: var(--show, none);
+}
+
+
+/* Estilos para el botón de llamada a la acción (CTA). */
+.cta {
+    display: inline-block;
+    background-color: #15184d;
+    justify-self: center;
+    color: #fff;
+    text-decoration: none;
+    padding: 13px 30px;
+    border-radius: 32px;
+}
+
+
+/* Estilos para la sección "Knowledge", con un fondo degradado radial y diseño de contenedor. */
+.knowledge {
+    background-color: #ffffff;
+    background-size: 20px 20px;
+    background-position: 0 0, 10px 10px;
+    overflow: hidden;
+}
+
+/* Estilos específicos para el contenedor de la sección "Knowledge" con diseño de cuadrícula. */
+.knowledge__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    align-items: center;
+}
+
+/* Estilos para la imagen en la sección "Knowledge", con tamaño máximo y diseño responsivo. */
+.knowledge__picture {
+    max-width: 500px;
+}
+
+/* Estilos para el párrafo en la sección "Knowledge". */
+.knowledge__paragraph {
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+/* Estilos para la imagen en la sección "Knowledge" con anchura del 100%. */
+.knowledge__img {
+    width: 100%;
+    display: block;
+}
+
+/* Estilos para la sección "Testimony", con un fo
+
+
+
+/*form*/
+
+/* Importa la fuente Poppins desde Google Fonts con diferentes pesos para su uso en la página. */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* Define variables globales, como el relleno del contenedor y el color del título. */
+:root {
+    --padding-container: 100px 0;
+    --color-title: #000000;
+}
+
+/* Establece la fuente global para el cuerpo del documento. */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* Estilos específicos para el contenedor de la sección Hero, con un ancho máximo y relleno. */
+.hero__container {
+    max-width: 800px;
+    --padding-container: 0;
+    display: grid;
+    grid-auto-rows: max-content;
+    align-content: center;
+    gap: 1em;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+/*form*/
+
+.sect {   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+} 
+
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 1000px;
+    
+}
+
+
+.form-image {
+    flex: 1;
+    min-width: 500px; /* Para asegurarse de que la imagen tenga un tamaño mínimo */
+    margin-right: 20px; /* Añadir margen a la derecha para separar de formulario */
+    display: flex; /* Usa flexbox para centrar la imagen */
+    justify-content: center; /* Centra horizontalmente la imagen */
+    align-items: center; /* Centra verticalmente la imagen */
+   
+}
+
+.form-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Agrega sombra a la imagen */
+    position: relative; /* Asegura que la sombra esté detrás de la imagen */
+    z-index: 1; /* Eleva la imagen sobre la sombra */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.form-content {
+    flex: 2;
+    padding: 30px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    min-height: 500px; /* Establece una altura mínima para que el formulario tenga el mismo tamaño que la imagen */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.form-content h1{
+    text-align: center; /* Centra horizontalmente el primer título */
+    margin-bottom: 20px; /* Añade un margen inferior para separar del resto de los elementos */
+    text-transform: none;
+    font-size: 28px;
+}
+
+form {
+    width: 100%;
+    text-transform: none;
+}
+
+.info-personal .h2 {
+    font-size: 24px;
+    color: #333;
+    text-transform: none;
+    margin-bottom: 20px;
+}
+
+
+.input-group {
+    margin-top: 20px;
+    text-transform: none;
+}
+
+.input-group label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+    text-align: left;
+    text-transform: none;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+
+.formulario button {
+    margin-top: 20px;
+    background-color: #de0a0a;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-transform: none;
+    width: 100%;
+}
+
+.formulario button:hover {
+    background-color: #b80909;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+    text-transform: none;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="radio"] {
+    width: calc(100% - 40px);
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-transform: none;
+}
+
+input[type="radio"] {
+    width: auto;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    text-transform: none;
+}
+
+.opciones {
+    margin-left: 5px;
+    color: #555;
+    text-transform: none;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .contenedor {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .form-image, .form-content {
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+  
+    .form-content {
+      margin-top: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .formulario input, .formulario button {
+      font-size: 14px;
+      padding: 8px;
+    }
+  
+    .formulario button {
+      width: 100%;
+      margin-top: 10px;
+    }
+  }
+
+
+
+/*Site Footer*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style: none;
+}
+
+.footer {
+    background-color: #15184d;
+    padding: 70px 0;
+    color: white;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+    margin-right: 40px; /* Reducido el margen derecho */
+    /* Añade un margen derecho para separar de la columna del logo */
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #FF0000;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    max-width: 100%;
+    /* Asegura que la imagen se ajuste al ancho de su contenedor */
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 300;
+    color: #fffbfb; /* Se eliminó la declaración redundante */
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: 8px;
+}
+
+.footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+    color: #24262b;
+    background-color: #ffffff;
+}
+
+
+
+/* Formulario en el pie de página */
+.footer__form {
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+/* Entradas del formulario en el pie de página */
+.footer__input {
+    flex: 1;
+}
+
+/* Media Query para pantallas de hasta 600px de ancho */
+
+@media (max-width: 600px) {
+    /* Ajustes de estilo para tamaños de pantalla más pequeños */
+
+    /* Título del héroe */
+    .hero__title {
+        font-size: 2rem;
+    }
+
+
+    /* Título del pie de página */
+    .footer__title {
+        justify-self: start;
+        margin-bottom: 15px;
+    }
+
+    /* Navegación en el pie de página */
+    .nav--footer {
+        padding-bottom: 60px;
+    }
+
+    /* Enlaces de navegación en el pie de página */
+    .nav__link--footer {
+        justify-content: space-between;
+    }
+
+    /* Entradas del formulario en el pie de página */
+    .footer__inputs {
+        flex-wrap: wrap;
+    }
+
+    /* Entrada del formulario en el pie de página */
+    .footer__input {
+        flex-basis: 100%;
+        margin: 0;
+        margin-bottom: 16px;
+    }
+
+    /* Botón de envío del formulario en el pie de página */
+    .footer__submit {
+        margin-right: auto;
+        margin-left: 0;
+        /* margin:0; width: 100%; */
+    }
+}
+
+
+
+.home .content h3 {
+    font-size: 6rem;
+    color: #ffffff;
+    display: flex;
+    margin: 0;
+    /* Para eliminar el margen predeterminado del h3 */
+    align-items: center;
+    /* Para centrar verticalmente */
+  }
+  
+  
+  #admisiones-title {
+    overflow: hidden;
+    /* Para ocultar el exceso de texto */
+    white-space: nowrap;
+    /* Para evitar el salto de línea */
+    position: relative;
+    /* Para posicionar el cursor */
+  }
+  
+  
+  @keyframes blink-caret {
+  
+  
+    from,
+    to {
+      opacity: 1;
+    }
+  
+  
+    50% {
+      opacity: 0;
+    }
+  }
+  
+
+  
+
+  
